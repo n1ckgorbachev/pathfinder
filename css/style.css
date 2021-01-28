@@ -22,3 +22,61 @@
 .header__title_second {
     font-size: 21px;
 }
+
+.main {
+    margin-top: 20px;
+}
+
+.player {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.player__value {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.monster {
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.monster__title {
+    margin-right: 10px;
+}
+
+input {
+    width: 30px;
+}
+
+.button__container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.probability {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.probability__title {
+    display: flex;
+    justify-content: center;
+}
