@@ -38,6 +38,11 @@
     font-weight: bold;
 }
 
+.plus__title {
+    display: flex;
+    justify-content: center;
+}
+
 .monster {
     font-size: 23px;
     font-weight: bold;
