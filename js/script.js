@@ -11,6 +11,8 @@ let d12 = +document.getElementById('d12__value').value;
 let plus = +document.getElementById('plus__value').value; //Отдельно
 let monster = +document.getElementById('monster__value').value;
 
+monster -= plus;
+
 if(d4 > 0){
     for(let i =0; i < d4; i++){
         maxDiceValues.push(4);
@@ -100,6 +102,7 @@ function probabilityInPercents(positiveExperiments){
 
 
 let totalResult = probabilityInPercents(aboveOrEquals(monster));
+totalResult = totalResult.toFixed(2);
 totalResult = totalResult + "%";
 document.getElementById('result').innerHTML = totalResult;
 
