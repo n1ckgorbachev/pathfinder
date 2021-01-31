@@ -3,35 +3,46 @@ function startProgram(){
 let maxDiceValues = new Array();
 
 //Получение значений из html
-let d4 = document.getElementById('d4__value').value;
-let d6 = document.getElementById('d6__value').value;
-let d8 = document.getElementById('d8__value').value;
-let d10 = document.getElementById('d10__value').value;
-let d12 = document.getElementById('d12__value').value;
-let plus = document.getElementById('plus__value').value; //Отдельно
-let monster = document.getElementById('monster__value').value;
+let d4 = +document.getElementById('d4__value').value;
+let d6 = +document.getElementById('d6__value').value;
+let d8 = +document.getElementById('d8__value').value;
+let d10 = +document.getElementById('d10__value').value;
+let d12 = +document.getElementById('d12__value').value;
+let plus = +document.getElementById('plus__value').value; //Отдельно
+let monster = +document.getElementById('monster__value').value;
 
 if(d4 > 0){
-    maxDiceValues.push(4);
+    for(let i =0; i < d4; i++){
+        maxDiceValues.push(4);
+    }
 }
 
 if(d6 > 0){
-    maxDiceValues.push(6);
+    for(let i =0; i < d6; i++){
+        maxDiceValues.push(6);
+    }
 }
 
 if(d8 > 0){
-    maxDiceValues.push(8);
+    for(let i =0; i < d8; i++){
+        maxDiceValues.push(8);
+    }
 }
 
 if(d10 > 0){
-    maxDiceValues.push(10);
+    for(let i =0; i < d10; i++){
+        maxDiceValues.push(10);
+    }
 }
 
 if(d12 > 0){
-    maxDiceValues.push(12);
+    for(let i =0; i < d12; i++){
+        maxDiceValues.push(12);
+    }
 }
 
 let currDiceValues = new Array(maxDiceValues.length).fill(1);
+
 
 // _________________________________________
 
