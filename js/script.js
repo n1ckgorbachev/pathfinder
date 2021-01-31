@@ -56,6 +56,9 @@ function goodSet(boarder){
             return true;
         }
     })
+    if(res > (boarder-1)){
+        return true;
+    }
     return false;
 }
 
