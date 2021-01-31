@@ -102,7 +102,7 @@ function probabilityInPercents(positiveExperiments){
 
 
 let totalResult = probabilityInPercents(aboveOrEquals(monster));
-totalResult = totalResult.toFixed(2);
+totalResult = totalResult.toFixed(0);
 totalResult = totalResult + "%";
 document.getElementById('result').innerHTML = totalResult;
 
