@@ -1,3 +1,7 @@
+:root {
+    --main-font: font-family: 'Roboto', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,18 +16,19 @@
 }
 
 .header__title {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     margin: auto;
     text-align: center;
     margin-top: 10px;
 }
 
 .header__title_main {
-    font-size: 40px;
+    font-size: 33px;
+    text-transform: uppercase;
 }
 
 .header__title_second {
-    font-size: 21px;
+    font-size: 23px;
     text-align: center;
 }
 
@@ -67,6 +72,9 @@
 input {
     width: 35px;
     height: 20px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 4px;
 }
 
 .button__container {
@@ -84,6 +92,10 @@ input {
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.25);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.25);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.25);
 }
 
 .probability {

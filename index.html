@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Вероятность победы над монстром</title>
 </head>
 
@@ -25,32 +25,32 @@
             <div class="player">
                 <div class="d4 player__value">
                     <div class="d4__title player__title">d4</div>
-                    <input type="number" class="d4__value" id="d4__value">
+                    <input type="number" min="0" class="d4__value" id="d4__value">
                 </div>
                 <div class="d6 player__value">
                     <div class="d6__title player__title">d6</div>
-                    <input type="number" class="d6__value" id="d6__value">
+                    <input type="number" min="0" class="d6__value" id="d6__value">
                 </div>
                 <div class="d8 player__value">
                     <div class="d8__title player__title">d8</div>
-                    <input type="number" class="d8__value" id="d8__value">
+                    <input type="number" min="0" class="d8__value" id="d8__value">
                 </div>
                 <div class="d10 player__value">
                     <div class="d10__title player__title">d10</div>
-                    <input type="number" class="d10__value" id="d10__value">
+                    <input type="number" min="0" class="d10__value" id="d10__value">
                 </div>
                 <div class="d12 player__value">
                     <div class="d12__title player__title">d12</div>
-                    <input type="number" class="d12__value" id="d12__value">
+                    <input type="number" min="0" class="d12__value" id="d12__value">
                 </div>
                 <div class="plus player__value">
                     <div class="plus__title">+</div>
-                    <input type="number" class="plus__value" id="plus__value">
+                    <input type="number" min="0" class="plus__value" id="plus__value">
                 </div>
             </div>
             <div class="monster">
                 <div class="monster__title">Сложность монстра</div>
-                <input type="number" class="monster__value" id="monster__value">
+                <input type="number" min="0" class="monster__value" id="monster__value">
             </div>
         </div>
         <div class="button__container">
