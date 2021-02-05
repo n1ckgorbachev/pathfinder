@@ -1,4 +1,4 @@
-function startProgram(){
+function initialization(){
 
 let maxDiceValues = new Array();
 
@@ -13,6 +13,7 @@ let monster = +document.getElementById('monster__value').value;
 
 monster -= plus;
 
+// Число в input - количество кубиков этого типа
 if(d4 > 0){
     for(let i =0; i < d4; i++){
         maxDiceValues.push(4);
@@ -47,7 +48,6 @@ let currDiceValues = new Array(maxDiceValues.length).fill(1);
 
 
 // _________________________________________
-
 
 
 function goodSet(boarder){
@@ -100,9 +100,19 @@ function probabilityInPercents(positiveExperiments){
     return positiveExperiments / allCombinations * 100;
 }
 
-
 let totalResult = probabilityInPercents(aboveOrEquals(monster));
 totalResult = totalResult.toFixed(0);
+
+let colorFont = document.getElementById('result');
+
+if(totalResult < 40) {
+    colorFont.style.color="red";
+} else if( totalResult > 60) {
+    colorFont.style.color="green";
+} else {
+    colorFont.style.color="#f4c130";
+}
+
 totalResult = totalResult + "%";
 document.getElementById('result').innerHTML = totalResult;
 
